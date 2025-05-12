@@ -1,7 +1,7 @@
 const produtos = [
   { id: 1, nome: "Vestido Azul", preco: 190.90, imagem: "./vestido1.jpeg" },
   { id: 2, nome: "Vestido Longo marrom", preco: 300.00, imagem: "./vestido2.jpeg" },
-  { id: 3, nome: "roupa casa", preco: 239.90, imagem: "./vestidocasa.png" },
+  { id: 3, nome: "Conjunto Vermelho", preco: 239.90, imagem: "./vestidocasa.png" },
   { id: 4, nome: "Vestido Azul marinho", preco: 120.00, imagem: "./vestido4.jpeg" },
   { id: 5, nome: "Blaze Rosa", preco: 199.90, imagem: "./vestido5.jpeg" },
   { id: 6, nome: "Vestido Laminal Marrom", preco: 130.90, imagem: "./vestido6.jpeg" },
