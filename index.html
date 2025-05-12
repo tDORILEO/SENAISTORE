@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Virtual SENAI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="./logo.png" alt="Logo da Loja" style="height: 60px;">
+      <button id="cart-btn" onclick="toggleCarrinho()">🛒 <span id="cart-count">0</span></button>
+    </div>
+  </header>
+  
+
+  <main class="container">
+    <section class="produtos" id="lista-produtos"></section>
+
+    <aside class="carrinho" id="carrinho">
+      <h2>🛍️ Seu Carrinho</h2>
+      <div id="cart-items"></div>
+      <div class="total">
+        <strong>Total:</strong> R$ <span id="valor-total">0.00</span>
+      </div>
+      <button id="finalizar-btn" onclick="finalizarCompra()">Finalizar Compra</button>
+    </aside>
+  </main>
+  <section class="avaliacoes">
+    <h2>🗣️ Avaliações dos Clientes</h2>
+    <div class="avaliacao">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Juliana" class="avatar" />
+      <div class="avaliacao-conteudo">
+        <p>"Adorei meu vestido novo! Chegou super rápido e a qualidade é ótima!"</p>
+        <div class="estrelas">⭐⭐⭐⭐⭐</div>
+        <strong>Juliana S.</strong>
+      </div>
+    </div>
+  
+    <div class="avaliacao">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Carla" class="avatar" />
+      <div class="avaliacao-conteudo">
+        <p>"Ótimo atendimento e preços acessíveis. Recomendo a todos!"</p>
+        <div class="estrelas">⭐⭐⭐⭐</div>
+        <strong>Carla M.</strong>
+      </div>
+    </div>
+  
+    <div class="avaliacao">
+      <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Amanda" class="avatar" />
+      <div class="avaliacao-conteudo">
+        <p>"Site fácil de usar e entrega dentro do prazo. Comprarei novamente."</p>
+        <div class="estrelas">⭐⭐⭐⭐⭐</div>
+        <strong>Amanda P.</strong>
+      </div>
+    </div>
+  </section>
+  <!-- Seção de História do Site -->
+<section class="historia">
+  <div class="conteudo-historia">
+    <h2><i class="fas fa-history"></i> História do Site</h2>
+    <p>Este site, além de ser um projeto feito para suplir o trabalho da UC do curso de aprendizagem, foi pensado para que os alunos de todo o SENAI possam incluir seus produtos de forma segura e com a devida permissão da instituição.</p>
+    <p>Nosso protótipo visa fornecer as roupas confeccionadas pelos alunos do curso de costura, para que haja um fluxo de saída e entrada de roupas e, assim, ajudar o curso a ser mais conhecido.</p>
+  </div>
+</section>
+
+<!-- Seção de Parabenização à Turma de Costura -->
+<section class="parabens">
+  <div class="conteudo-parabens">
+    <h2><i class="fas fa-trophy"></i> Parabéns à Turma de Costura!</h2>
+    <p>Gostaríamos de parabenizar a turma de costura pela brilhante participação nas Olimpíadas de Profissões (Olimpíadas do SENAI)! Vocês fizeram um trabalho incrível e o reconhecimento é merecido. Continuem se dedicando e mostrando seu talento!</p>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Loja SENAI. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

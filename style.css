@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+#cart-btn {
+  background: white;
+  color: #0d47a1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+#cart-btn:hover {
+  background: #e3e3e3;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.produtos {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.produto {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #0d47a1;
+}
+
+.produto p {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+
+.produto button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.produto button:hover {
+  background-color: #1565c0;
+}
+
+.carrinho {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.carrinho h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #0d47a1;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.quantidade-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+button.incrementar {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.decrementar {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#finalizar-btn {
+  background-color: #2196f3;
+  color: white;
+  padding: 12px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+#finalizar-btn:hover {
+  background-color: #1976d2;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  background-color: #0d47a1;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.avaliacoes {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.avaliacoes h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0d47a1;
+  font-size: 1.8rem;
+}
+
+.avaliacao {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0d47a1;
+}
+
+.avaliacao-conteudo p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.estrelas {
+  color: #fbc02d;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.avaliacao strong {
+  color: #333;
+}
+
+/* Seção História do Site */
+.historia {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-historia {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.historia h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.historia p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #555;
+}
+
+/* Seção Parabenização */
+.parabens {
+  background-color: #e3f2fd;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-parabens {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0d47a1;
+}
+
+.parabens h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.parabens p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Ícones */
+.fas {
+  margin-right: 10px;
+  color: #0d47a1;
+}
+
+
